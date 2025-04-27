@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mobility Parking Scheme Application</title>
+    <link rel="stylesheet" href="manpatel1.css">
+</head>
+<body>
+    <form class="mps-form">
+        <h1>Mobility Parking Scheme (MPS) Application</h1>
+
+        <div class="section">
+            <label>Type of MPS permit needed</label><br>
+            <label><input type="checkbox" name="permitType" value="Individual"> Individual</label>
+            <label><input type="checkbox" name="permitType" value="Temporary"> Temporary</label>
+        </div>
+
+        <div class="section">
+            <label>Type of Application</label><br>
+            <label><input type="checkbox" name="applicationType" value="New"> New</label>
+            <label><input type="checkbox" name="applicationType" value="Renewal"> Renewal</label>
+            <label><input type="checkbox" name="applicationType" value="Replacement"> Replacement</label>
+        </div>
+
+        <div class="section">
+            <label>Reason for replacement</label><br>
+            <label><input type="checkbox" name="reason" value="Lost"> Lost</label>
+            <label><input type="checkbox" name="reason" value="Stolen"> Stolen</label>
+            <label><input type="checkbox" name="reason" value="Damaged"> Damaged</label>
+            <label><input type="checkbox" name="reason" value="Defaced"> Defaced</label>
+            <label><input type="checkbox" name="reason" value="Confiscated"> Confiscated</label>
+            <label><input type="checkbox" name="reason" value="Changed Details"> Changed details including appearance</label>
+            <label><input type="checkbox" name="reason" value="Non receipt"> Non receipt of permit</label>
+        </div>
+
+        <div class="section">
+            <h2>SECTION 1</h2>
+            <label>Details for Individual or Temporary MPS permit</label><br>
+            <label>Surname of applicant: <input type="text" name="surname"></label><br>
+            <label>Given names: <input type="text" name="givenNames"></label><br>
+            <label>Residential address: <input type="text" name="address"></label><br>
+            <label>Postcode: <input type="text" name="postcode"></label><br>
+            <label>Date of birth: <input type="date" name="dob"></label><br>
+            <label>Customer no. (if known): <input type="text" name="customerNumber"></label>
+        </div>
+
+        <div class="section">
+            <label>2. Do you hold or have you ever held a licence to drive or ride or a NSW Photo Card/Proof of Age Card in NSW in the above name or in another name?</label><br>
+            <label><input type="radio" name="heldLicence" value="No"> No</label>
+            <label><input type="radio" name="heldLicence" value="Yes"> Yes</label>
+            <input type="text" name="otherName" placeholder="Other name">
+        </div>
+
+        <div class="section">
+            <label>3. Do any of the following statements apply to you?</label><br>
+            <label>(a) You hold a current or suspended NSW licence</label><br>
+            <label><input type="radio" name="currentLicence" value="No"> No</label>
+            <label><input type="radio" name="currentLicence" value="Yes"> Yes</label>
+            <div>
+                <label>Licence number: <input type="text" name="licenceNumber"></label><br>
+                <label>Licence class: <input type="text" name="licenceClass"></label><br>
+                <label>Expiry date: <input type="date" name="expiryDate"></label>
+            </div>
+
+            <label>(b) Your licence is subject to medical review by RM (including older driver reviews)</label><br>
+            <label><input type="radio" name="medicalReview" value="No"> No</label>
+            <label><input type="radio" name="medicalReview" value="Yes"> Yes</label>
+        </div>
+
+        <div class="section">
+            <label>4. Declaration by applicant</label><br>
+            <textarea name="declaration" rows="4" placeholder="Declaration statement..."></textarea><br>
+            <label>Signature of applicant: <input type="text" name="signature"></label><br>
+            <label>Date: <input type="date" name="signatureDate"></label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
